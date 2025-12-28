@@ -35,10 +35,7 @@ Route::prefix("category")->group(function(){
 
 
 
-Auth
-
-
-
-::routes();
+Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/register', [App\Http\Controllers\HomeController::class, 'index'])->name('regist');
